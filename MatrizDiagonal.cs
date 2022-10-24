@@ -11,7 +11,6 @@ class HelloWorld {
             linhas = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o número de Colunas desejado:");
             colunas = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite os números que irão ficar na Diagonal da Matriz:");
             for (i = 1; i <= linhas; i++)
             {
                 for (j = 1; j <= colunas; j++)
