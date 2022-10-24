@@ -3,9 +3,10 @@ class HelloWorld {
   static void Main() {
          Console.WriteLine("Olá úsuario, por favor informe os dados a seguir.");
         
-        int i, j, linhas, colunas;
-        int[,] a = new int[20, 20];
-        {
+           int i, j, linhas, colunas;
+           int[,] a = new int[20,20];
+           Random rnd = new Random();
+        
             Console.WriteLine("Digite o número de Linhas desejado:");
             linhas = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o número de Colunas desejado:");
@@ -18,7 +19,7 @@ class HelloWorld {
                     if(i == j)
                     {
                         
-                    a[i, j] = int.Parse(Console.ReadLine());
+                    a[i, j] = rnd.Next(100); 
                    
                     }
                    
@@ -41,6 +42,5 @@ class HelloWorld {
                 }
                 Console.WriteLine();
             }
-        }
     }
 }
