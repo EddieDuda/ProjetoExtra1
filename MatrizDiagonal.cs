@@ -11,19 +11,13 @@ class HelloWorld {
             linhas = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o número de Colunas desejado:");
             colunas = int.Parse(Console.ReadLine());
-            for (i = 1; i <= linhas; i++)
-            {
-                for (j = 1; j <= colunas; j++)
-                {
-                    if(i == j)
-                    {
+            for (i = 1; i <= linhas; i++){
+                for (j = 1; j <= colunas; j++){
+                    if(i == j){
                         
                     a[i, j] = rnd.Next(100); 
                    
-                    }
-                   
-                    else
-                    {
+                    }else{
                         
                     a[i, j] = 0;
                     
@@ -33,10 +27,8 @@ class HelloWorld {
             }
             //imprimir a matriz
             Console.WriteLine("Sua Matriz diagonal é essa:");
-            for (i = 1; i <= linhas; i++)
-            {
-                for (j = 1; j <= colunas; j++)
-                {
+            for (i = 1; i <= linhas; i++){
+                for (j = 1; j <= colunas; j++){
                     Console.Write("\t{0}", a[i, j]);
                 }
                 Console.WriteLine();
