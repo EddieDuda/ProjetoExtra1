@@ -1,5 +1,5 @@
 using System;
-class HelloWorld {
+class matrizdiagonal {
   // criando um modulo para verificar se a escolha de linhas e colunas está dentre os nossos requisitos  
   static int escolhald(int tamanho){
     while(tamanho < 2 || tamanho > 16){
